@@ -1,0 +1,12 @@
+# dependencies (regenerated via npm install)
+node_modules/
+apps/*/node_modules/
+
+# build output
+dist/
+apps/*/dist/
+
+# logs & os cruft
+*.log
+.DS_Store
+*.local

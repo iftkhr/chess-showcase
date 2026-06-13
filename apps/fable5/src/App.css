@@ -1,0 +1,97 @@
+.app {
+  position: fixed;
+  inset: 0;
+}
+
+.app canvas {
+  display: block;
+}
+
+.overlay {
+  position: absolute;
+  top: 24px;
+  left: 24px;
+  color: #e8e4da;
+  font-family: 'Trajan Pro', 'Cinzel', 'Palatino', 'Times New Roman', serif;
+  user-select: none;
+  pointer-events: none;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.85);
+}
+
+.overlay h1 {
+  margin: 0 0 2px;
+  font-size: 30px;
+  font-weight: 600;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: #c9a44a;
+}
+
+.subtitle {
+  font-size: 13px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  color: #9aa4ad;
+  margin-bottom: 12px;
+}
+
+.status {
+  font-size: 16px;
+  margin-bottom: 14px;
+  color: #cfd5da;
+  min-height: 20px;
+}
+
+.status.check {
+  color: #ff7b6b;
+  font-weight: 600;
+}
+
+.buttons {
+  display: flex;
+  gap: 10px;
+  pointer-events: auto;
+}
+
+.buttons button {
+  font: inherit;
+  font-size: 14px;
+  letter-spacing: 1.5px;
+  padding: 9px 22px;
+  border-radius: 4px;
+  border: 1px solid rgba(201, 164, 74, 0.45);
+  background: rgba(12, 14, 18, 0.55);
+  color: #d8cba8;
+  cursor: pointer;
+  backdrop-filter: blur(8px);
+  transition: background 0.15s, transform 0.1s, border-color 0.15s;
+}
+
+.buttons button:hover:not(:disabled) {
+  background: rgba(40, 36, 26, 0.75);
+  border-color: rgba(201, 164, 74, 0.9);
+  transform: translateY(-1px);
+}
+
+.buttons button:disabled {
+  opacity: 0.55;
+  cursor: default;
+}
+
+.buttons .play:not(:disabled) {
+  background: rgba(86, 24, 24, 0.6);
+  border-color: rgba(201, 164, 74, 0.7);
+  color: #e8d9b0;
+}
+
+.buttons .play:hover:not(:disabled) {
+  background: rgba(120, 32, 32, 0.75);
+}
+
+.hint {
+  margin-top: 14px;
+  font-size: 12.5px;
+  line-height: 1.5;
+  color: #8e897d;
+  max-width: 320px;
+}
